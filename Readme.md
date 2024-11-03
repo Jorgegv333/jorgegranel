@@ -16,7 +16,7 @@ Soy Jorge Granel Varella, estudiante de Ingeniería Informática y profesional e
 3. **Certificaciones**: Detalles de mis estudios y logros en certificaciones de ciberseguridad.
 
 ## Primer Post
-Mi primer post, ["Introducción a mi Viaje en Ciberseguridad: Retos, Aprendizajes y Objetivos"](./2024-11-03-introduccion-viaje-ciberseguridad.md), es una presentación de mis aspiraciones y objetivos en ciberseguridad. ¡Espero que lo disfruten y que les inspire en su propio camino!
+Mi primer post, ["Introducción a mi Viaje en Ciberseguridad: Retos, Aprendizajes y Objetivos"](./Introduccion.md), es una presentación de mis aspiraciones y objetivos en ciberseguridad. ¡Espero que lo disfruten y que les inspire en su propio camino!
 
 ## Contacto
 Podeis contactarme en [LinkedIn](https://www.linkedin.com/in/jorge-granel-varella-305722176/) o síganme aquí en GitHub para intercambiar conocimientos y experiencias en el mundo de la ciberseguridad.
