@@ -1,0 +1,18 @@
+Diario de Avances: Exploración de Servicios y Evasión de Firewall/IDS
+Fecha: 4 de noviembre de 2024
+Hoy me sumergí en la exploración de servicios SMB y FTP en un entorno de laboratorio, con el objetivo de entender cómo interactuar con estos servicios y cómo evadir sistemas de seguridad como firewalls e IDS/IPS.
+
+Al comenzar, utilicé nmap para hacer un reconocimiento inicial en el servidor objetivo, lo que me permitió descubrir puertos abiertos y los servicios que corrían en ellos, específicamente SMB y FTP. Esta información inicial es fundamental, ya que cada servicio en ejecución representa una posible vía de entrada o fuente de información.
+
+En el caso de SMB, experimenté con smbclient para listar y acceder a las comparticiones disponibles sin autenticación. Este ejercicio me permitió visualizar la estructura de directorios y, aunque las opciones de acceso eran limitadas, pude obtener una buena idea de los archivos y permisos configurados en el sistema remoto. Identifiqué directorios importantes y revisé archivos en busca de indicadores específicos, como flag.txt, lo que me ayudó a familiarizarme con la forma en que el servicio SMB gestiona los permisos y los accesos.
+
+Al avanzar, comencé a aplicar técnicas de evasión para superar las restricciones del firewall y evitar la detección de sistemas IDS/IPS. Experimenté con varios enfoques en nmap, como el uso de paquetes fragmentados y escaneos con puertos de origen configurados (por ejemplo, -D para decoys). Cada técnica me ofreció una perspectiva distinta sobre cómo los sistemas de seguridad del objetivo reaccionaban a los intentos de escaneo. Noté que ciertos puertos aparecían como filtrados, lo cual sugiere que el firewall bloquea conexiones entrantes no reconocidas. Estas pruebas fueron útiles para entender cómo los sistemas de seguridad aplican sus reglas y cómo se pueden diseñar técnicas para evadir estas barreras.
+
+También exploré NFS, un sistema de archivos en red diseñado para facilitar el acceso a directorios remotos en Linux y UNIX. Monté una compartición NFS en mi propio sistema, lo que me permitió inspeccionar sus contenidos como si fueran locales. Esta técnica es valiosa cuando se tienen permisos limitados en el sistema remoto y se necesita realizar un análisis más profundo de los archivos compartidos.
+
+Reflexión del Día
+Este ejercicio fue un recordatorio de lo importante que es conocer no solo las herramientas, sino también los principios detrás de cada protocolo y servicio. Los servicios SMB y NFS son pilares en muchos sistemas, y entender cómo funcionan, además de cómo evadir restricciones de seguridad, es clave en el campo de la ciberseguridad.
+
+Próximos Pasos
+Mi siguiente objetivo es continuar explorando el uso de nmap y otras herramientas para mejorar en técnicas de evasión. También quiero profundizar en el análisis de SMB y NFS para comprender mejor sus vulnerabilidades y potenciales puntos de acceso.
+
